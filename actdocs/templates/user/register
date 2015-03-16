@@ -1,4 +1,4 @@
-[% WRAPPER ui title = loc('<conf name> Registration', global.conference.name) %]
+[% WRAPPER ui title = loc('Registration') %]
 [% USE date %]
 [% IF date.now > end_date %]
 <p>
@@ -6,9 +6,19 @@
 </p>
 [% ELSE %]
 
-<p>
- [% loc('To register to the <name> conference', global.conference.name) %]
-</p>
+[% PROCESS error
+   msgs = {
+     ERR_FIRST_NAME         => loc("You must enter your first name"),
+     ERR_LAST_NAME          => loc("You must enter your last name"),
+     ERR_EMAIL              => loc("You must enter your email"),
+     ERR_EMAIL_SYNTAX       => loc("Your email address looks bogus."),
+     ERR_TSHIRT             => loc("A valid T-shirt size is required."),
+     ERR_PHONE              => loc("You must enter your phone"),
+     ERR_COMPANY            => loc("You must enter your company name"),
+     ERR_POSITION           => loc("You must enter your position"),
+     ERR_AGREE_DATA         => loc("You must agree with rules"),
+  }
+%]
 
 <center>
 
