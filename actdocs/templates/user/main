@@ -83,9 +83,6 @@
         <li><a href="[% make_uri('newtalk') %]">{{submit a talk}}</a><br /></li>
     [% END %]
     <li><a href="[% make_uri('logout') %]">{{log out}}</a></li>
-    [% IF can_unregister %]
-    <li><a href="[% make_uri('unregister') %]">[% loc("unregister from <this conference>", global.conference.name) %]</a></li>
-    [% END %]
 </ul>
 
 [% IF conferences.size %]
