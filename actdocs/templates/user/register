@@ -99,8 +99,11 @@
 </tr>
 
 <tr>
-   <td align="right" valign="top" colspan="2">
-      <input type="checkbox" name="agree_data"  value="1" />  Регистрируясь на это событие, вы подтверждаете ваше согласие на обработку персональных данных.
+   <td align="right" valign="top" colspan="3">
+        <p>
+      <input type="checkbox" name="agree_data"  value="1" />  Регистрируясь на это событие, вы подтверждаете ваше <a href="#" onclick="var el = document.getElementById("personal-data-agreement"); el.style.display = (el.style.display == 'none') ? '' : 'none'
+;return false;">согласие на обработку персональных данных</a>
+      </p>
 
       <div style="margin-top: 10px; display:none;" id="personal-data-agreement" class="agreement">
         <p>
@@ -123,8 +126,10 @@
 </tr>
 
 <tr>
-   <td align="right" valign="top" colspan="2">
+   <td align="right" valign="top" colspan="3">
+      <p>
       <input type="checkbox" name="agree_media"  value="1" /> Настоящим я даю свое согласие ООО «Мэйл.Ру» и Группе Компаний на воспроизведение, использование, распространение, доведение до всеобщего сведения, передачу в эфир и по кабелю своего изображения, содержащегося на видеозаписях и фотографиях, которые будут сделаны в ходе проведения мероприятий, проводимых ООО «Мэйл.Ру» и Группой Компаний, на обработку указанных видеозаписей и фотографий, в том числе на ретуширование, затемнение и иное изменение моего изображения.
+      </p>
    </td>
 </tr>
 
