@@ -1,3 +1,18 @@
+[% PROCESS error
+   msgs = {
+     ERR_FIRST_NAME         => loc("You must enter your first name"),
+     ERR_LAST_NAME          => loc("You must enter your last name"),
+     ERR_EMAIL              => loc("You must enter your email"),
+     ERR_EMAIL_SYNTAX       => loc("Your email address looks bogus."),
+     ERR_TSHIRT             => loc("A valid T-shirt size is required."),
+     ERR_PHONE              => 'Необходимо ввести телефон',
+     ERR_COMPANY            => 'Необходимо ввести имя компании',
+     ERR_POSITION           => 'Необходимо ввести должность',
+     ERR_AGREE_DATA         => 'Вы должны согласится на обработку персональных данных',
+     ERR_AGREE_MEDIA        => 'Вы должны согласится на обработку изображений',
+  }
+%]
+
 <form method="POST" action="[% global.request.r.uri %]">
 
 <table border="1" cellpadding="10" cellspacing="0"><tr><td>
